@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "beryllium_rc2_sb_active_scalability_multinet_lineartopo_rawdata_viz",
+    "_type": "search",
+    "_source": {
+      "title": "beryllium_rc2_sb_active_scalability_multinet_lineartopo_rawdata_viz",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "global_sample_id",
+        "date",
+        "timestamp",
+        "of_in_bytes_per_sec",
+        "of_in_packets_per_sec",
+        "of_out_bytes_per_sec",
+        "of_out_packets_per_sec",
+        "tcp_of_in_bytes_per_sec",
+        "tcp_of_in_packets_per_sec",
+        "tcp_of_out_bytes_per_sec",
+        "tcp_of_out_packets_per_sec",
+        "multinet_size",
+        "multinet_group_size",
+        "multinet_group_delay_ms",
+        "multinet_hosts_per_switch",
+        "multinet_topology_type",
+        "multinet_worker_topo_size",
+        "multinet_workers",
+        "controller_cpu_shares",
+        "controller_cpu_system_time",
+        "controller_cpu_user_time",
+        "controller_cwd",
+        "controller_java_xopts",
+        "controller_name",
+        "controller_node_ip",
+        "controller_num_fds",
+        "controller_num_threads",
+        "controller_port",
+        "controller_statistics_period_ms",
+        "controller_vm_size",
+        "fifteen_minute_load",
+        "five_minute_load",
+        "free_memory_bytes",
+        "interpacket_delay_ms",
+        "one_minute_load",
+        "total_memory_bytes",
+        "traffic_generation_duration_ms",
+        "used_memory_bytes"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"beryllium_rc2_sb_active_scalability_multinet_lineartopo\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+      }
+    }
+  }
+]
