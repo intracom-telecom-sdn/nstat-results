@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"Controller VM size Average (MB)\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"Repeat intervals\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"System used memory Average (KB)\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"Repeat intervals\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"throughput_responses_sec\",\"customLabel\":\"Throughput Average (responces/sec)\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Repeat intervals\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_cpu_load_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"one_minute_load\",\"customLabel\":\"CPU one minute load\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Repeat intervals\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"five_minute_load\",\"customLabel\":\"CPU five minutes load\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"fifteen_minute_load\",\"customLabel\":\"CPU fifteen minute load\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"Controller Threads Average\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"Repeat intervals\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_cpu_user_time_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_cpu_user_time_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_cpu_user_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_cpu_user_time\",\"customLabel\":\"Controller CPU time Average\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"Repeat intervals\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

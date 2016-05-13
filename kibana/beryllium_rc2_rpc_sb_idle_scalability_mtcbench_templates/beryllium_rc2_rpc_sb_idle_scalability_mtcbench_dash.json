@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "beryllium_rc2_rpc_sb_idle_scalability_mtcbench_dash",
+    "_type": "dashboard",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_idle_scalability_mtcbench_dash",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_bootup_time_viz\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":6,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_used_memory_viz\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":6,\"size_y\":4,\"col\":7,\"row\":1},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_controller_vm_size_viz\",\"type\":\"visualization\",\"panelIndex\":3,\"size_x\":6,\"size_y\":4,\"col\":1,\"row\":5},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_controller_open_fds_viz\",\"type\":\"visualization\",\"panelIndex\":4,\"size_x\":6,\"size_y\":4,\"col\":7,\"row\":5},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_controller_threads_viz\",\"type\":\"visualization\",\"panelIndex\":5,\"size_x\":6,\"size_y\":4,\"col\":1,\"row\":9},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_controller_cpu_user_time_viz\",\"type\":\"visualization\",\"panelIndex\":6,\"size_x\":6,\"size_y\":4,\"col\":7,\"row\":9},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_controller_cpu_system_time_viz\",\"type\":\"visualization\",\"panelIndex\":7,\"size_x\":6,\"size_y\":4,\"col\":1,\"row\":13},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_one_minute_load_viz\",\"type\":\"visualization\",\"panelIndex\":8,\"size_x\":6,\"size_y\":4,\"col\":7,\"row\":13},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_five_minutes_load_viz\",\"type\":\"visualization\",\"panelIndex\":9,\"size_x\":6,\"size_y\":4,\"col\":1,\"row\":17},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_fifteen_minutes_load_viz\",\"type\":\"visualization\",\"panelIndex\":10,\"size_x\":6,\"size_y\":4,\"col\":7,\"row\":17},{\"id\":\"beryllium_rc2_rpc_sb_idle_scalability_mtcbench_rawdata_viz\",\"type\":\"search\",\"panelIndex\":11,\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":21,\"columns\":[\"global_sample_id\",\"timestamp\",\"date\",\"bootup_time_secs\",\"discovered_switches\",\"cbench_switches\",\"cbench_threads\",\"cbench_switches_per_thread\",\"cbench_simulated_hosts\",\"cbench_thread_creation_delay_ms\",\"cbench_delay_before_traffic_ms\",\"cbench_ms_per_test\",\"cbench_internal_repeats\",\"cbench_mode\",\"cbench_warmup\",\"mtcbench_cpu_shares\",\"controller_name\",\"controller_node_ip\",\"controller_port\",\"controller_cwd\",\"controller_statistics_period_ms\",\"controller_cpu_shares\",\"controller_cpu_system_time\",\"controller_cpu_user_time\",\"controller_num_threads\",\"controller_num_fds\",\"controller_vm_size\",\"total_memory_bytes\",\"used_memory_bytes\",\"free_memory_bytes\",\"one_minute_load\",\"five_minute_load\",\"fifteen_minute_load\"],\"sort\":[\"_score\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_vm_size_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_vm_size_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_scalability_mtcbench_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"controller VM size (Bytes)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":15,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total switches\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_threads_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_threads_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"controller Threads\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":15,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total switches\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_throughput_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_throughput_viz",
+      "visState": "{\"title\":\"New Visualization\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"throughput_responses_sec\",\"customLabel\":\"Throughput Average (Responces/sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":15,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total switches\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_cpu_user_time_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_cpu_user_time_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_cpu_user_time\",\"customLabel\":\"controller CPU user time\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":15,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total switches\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_system_load_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_system_load_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_scalability_mtcbench_controller_cpu_user_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"one_minute_load\",\"customLabel\":\"One minute load\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":15,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total switches\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"five_minute_load\",\"customLabel\":\"Five minutes load\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"fifteen_minute_load\",\"customLabel\":\"Fifteen minutes load\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_used_memory_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_used_memory_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_scalability_mtcbench_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"Used memory (KB)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":15,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total switches\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

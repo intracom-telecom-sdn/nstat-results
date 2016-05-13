@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+    "_type": "search",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "global_sample_id",
+        "timestamp",
+        "date",
+        "repeat_id",
+        "test_repeats",
+        "throughput_responses_sec",
+        "cbench_internal_repeats",
+        "internal_repeat_id",
+        "cbench_switches_per_thread",
+        "cbench_threads",
+        "cbench_switches",
+        "cbench_thread_creation_delay_ms",
+        "cbench_delay_before_traffic_ms",
+        "cbench_mode",
+        "cbench_ms_per_test",
+        "cbench_simulated_hosts",
+        "cbench_warmup",
+        "mtcbench_cpu_shares",
+        "controller_name",
+        "controller_cwd",
+        "controller_java_xopts",
+        "controller_cpu_shares",
+        "controller_node_ip",
+        "controller_port",
+        "controller_statistics_period_ms",
+        "controller_cpu_user_time",
+        "controller_num_threads",
+        "controller_cpu_system_time",
+        "controller_num_fds",
+        "controller_vm_size",
+        "one_minute_load",
+        "five_minute_load",
+        "fifteen_minute_load",
+        "free_memory_bytes",
+        "total_memory_bytes",
+        "used_memory_bytes"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  }
+]
