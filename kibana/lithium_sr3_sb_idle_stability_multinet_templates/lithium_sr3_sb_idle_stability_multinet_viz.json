@@ -1,10 +1,10 @@
 [
   {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_tcp_out_packets_viz",
+    "_id": "lithium_sr3_sb_idle_stability_multinet_packets_per_sec_viz",
     "_type": "visualization",
     "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_tcp_out_packets_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_of_in_bytes_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_out_packets_per_sec\",\"customLabel\":\"Outgoing TCP packets with OpenFlow payload per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
+      "title": "lithium_sr3_sb_idle_stability_multinet_packets_per_sec_viz",
+      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_packets_per_sec_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_in_packets_per_sec\",\"customLabel\":\"Incoming OF pps\"}},{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_out_packets_per_sec\",\"customLabel\":\"Outgoing OF pps\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_in_packets_per_sec\",\"customLabel\":\"Incoming TCP(OF payload) pps\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_out_packets_per_sec\",\"customLabel\":\"Outgoing TCP(OF payload) pps\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
@@ -15,161 +15,11 @@
     }
   },
   {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_tcp_out_bytes_viz",
+    "_id": "lithium_sr3_sb_idle_stability_multinet_bytes_per_sec_viz",
     "_type": "visualization",
     "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_tcp_out_bytes_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_tcp_out_packets_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_out_bytes_per_sec\",\"customLabel\":\"Outgoing TCP bytes with OpenFlow payload per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_of_in_packets_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_of_in_packets_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_of_out_bytes_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_in_packets_per_sec\",\"customLabel\":\"Incomming OpenFlow packets per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_of_out_bytes_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_of_out_bytes_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_of_out_packets_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_out_bytes_per_sec\",\"customLabel\":\"Outgoing OpenFlow bytes per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_of_in_bytes_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_of_in_bytes_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_of_in_packets_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_in_bytes_per_sec\",\"customLabel\":\"Incomming OpenFlow bytes per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_of_out_packets_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_of_out_packets_viz",
-      "visState": "{\"title\":\"New Visualization\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_out_packets_per_sec\",\"customLabel\":\"Outgoing OpenFlow packets per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_tcp_in_bytes_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_tcp_in_bytes_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_tcp_out_bytes_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_in_bytes_per_sec\",\"customLabel\":\"Incomming TCP bytes with OpenFlow payload per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_tcp_in_packets_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_tcp_in_packets_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_tcp_in_bytes_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_in_packets_per_sec\",\"customLabel\":\"Incomming TCP packets with OpenFlow payload per second\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_used_memory_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_used_memory_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_tcp_in_packets_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"Used memory (KB)\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_controller_vm_size_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_controller_vm_size_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"Controller VM size (Bytes)\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_controller_threads_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_controller_threads_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"Controller Threads\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "lithium_sr3_sb_idle_stability_multinet_controller_cpu_user_time_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "lithium_sr3_sb_idle_stability_multinet_controller_cpu_user_time_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_cpu_user_time\",\"customLabel\":\"Controller CPU user time\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}}],\"listeners\":{}}",
+      "title": "lithium_sr3_sb_idle_stability_multinet_bytes_per_sec_viz",
+      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_bytes_per_sec_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_in_bytes_per_sec\",\"customLabel\":\"Incoming OF Bps\"}},{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"of_out_bytes_per_sec\",\"customLabel\":\"Outgoing OF Bps\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_in_bytes_per_sec\",\"customLabel\":\"Incoming TCP(OF payload) Bps\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"tcp_of_out_bytes_per_sec\",\"customLabel\":\"Outgoing TCP(OF payload) Bps\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
@@ -184,13 +34,72 @@
     "_type": "visualization",
     "_source": {
       "title": "lithium_sr3_sb_idle_stability_multinet_system_load_viz",
-      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_controller_cpu_user_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"one_minute_load\",\"customLabel\":\"One minute load\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample ID\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"five_minute_load\",\"customLabel\":\"Five minutes load\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"fifteen_minute_load\",\"customLabel\":\"Fifteen minutes load\"}}],\"listeners\":{}}",
+      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_system_load_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"one_minute_load\",\"customLabel\":\"Controller node 1m system load\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"five_minute_load\",\"customLabel\":\"Controller node 5m system load\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"fifteen_minute_load\",\"customLabel\":\"Controller node 15m system load\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_sb_idle_stability_multinet_controller_vm_size_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_sb_idle_stability_multinet_controller_vm_size_viz",
+      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"Controller virtual memory size (Bytes)\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_sb_idle_stability_multinet_used_memory_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_sb_idle_stability_multinet_used_memory_viz",
+      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"Controller node used memory (KB)\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_sb_idle_stability_multinet_controller_threads_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_sb_idle_stability_multinet_controller_threads_viz",
+      "visState": "{\"title\":\"lithium_sr3_sb_idle_stability_multinet_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"Controller threads\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"sample_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_sb_idle_stability_multinet_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_sb_idle_stability_multinet_descr_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_sb_idle_stability_multinet_descr_viz",
+      "visState": "{\"title\":\"New Visualization\",\"type\":\"markdown\",\"params\":{\"markdown\":\"## Beryllium RC2, Active Idle switch stability with Multinet\\n- topology size per worker node: 200\\n- number of worker nodes: 16\\n- total topology size: 3200\\n- group size: 1\\n- group delay: 2000ms\\n- topology type: Linear\\n- hosts per switch: 1\\n- period between samples: 10s\\n- number of samples: 4320\\n- total running time: 12hours\\n- persistence: enabled\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
       }
     }
   }

@@ -1,9 +1,9 @@
 [
   {
-    "_id": "lithium_sr3_ds_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+    "_id": "lithium_sr3_ds_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
     "_type": "search",
     "_source": {
-      "title": "lithium_sr3_ds_sb_active_stability_mtcbench_no_restart_500switches_12hours_rawdata_viz",
+      "title": "lithium_sr3_ds_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
       "description": "",
       "hits": 0,
       "columns": [
@@ -45,8 +45,8 @@
         "used_memory_bytes"
       ],
       "sort": [
-        "_score",
-        "desc"
+        "global_sample_id",
+        "asc"
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {

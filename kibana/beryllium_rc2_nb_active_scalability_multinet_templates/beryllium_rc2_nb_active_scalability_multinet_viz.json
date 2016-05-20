@@ -1,70 +1,10 @@
 [
   {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_rate_viz",
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_controller_threads_viz",
     "_type": "visualization",
     "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_rate_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"flows_controller_installation_rate\",\"customLabel\":\"Flows datastore installation rate (Flows/sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_add_controller_rate_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"add_flows_transmission_time\",\"customLabel\":\"Northbound add controller time (sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_add_controller_rate_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_add_controller_rate_viz",
-      "visState": "{\"title\":\"New Visualization\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"add_controller_rate\",\"customLabel\":\"Northbound add Flows rate (Flows/sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_time_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_time_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_rate_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"add_flows_time\",\"customLabel\":\"Flows datastore installation time (sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_used_memory_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_used_memory_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"Used memory (KB)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
+      "title": "beryllium_rc2_nb_active_scalability_multinet_controller_threads_viz",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"Controller threads\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
@@ -79,7 +19,7 @@
     "_type": "visualization",
     "_source": {
       "title": "beryllium_rc2_nb_active_scalability_multinet_controller_vm_size_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"controller VM size (Bytes)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"Controller virtual memory size (Bytes)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
@@ -90,11 +30,11 @@
     }
   },
   {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_system_load_viz",
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_used_memory_viz",
     "_type": "visualization",
     "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_system_load_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"one_minute_load\",\"customLabel\":\"One minute load\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}},{\"id\":\"4\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"five_minute_load\",\"customLabel\":\"Five minutes load\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"fifteen_minute_load\",\"customLabel\":\"Fefteen minutes load\"}}],\"listeners\":{}}",
+      "title": "beryllium_rc2_nb_active_scalability_multinet_used_memory_viz",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"Controller node used memory (KB)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
@@ -105,11 +45,11 @@
     }
   },
   {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_controller_cpu_user_time_viz",
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_add_controller_rate_viz",
     "_type": "visualization",
     "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_controller_cpu_user_time_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_cpu_user_time\",\"customLabel\":\"Controller CPU user time\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
+      "title": "beryllium_rc2_nb_active_scalability_multinet_add_controller_rate_viz",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_add_controller_rate_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"add_controller_rate\",\"customLabel\":\"NorthBound add flows rate (flows/sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
@@ -120,11 +60,55 @@
     }
   },
   {
-    "_id": "beryllium_rc2_nb_active_scalability_multinet_controller_threads_viz",
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_descr_viz",
     "_type": "visualization",
     "_source": {
-      "title": "beryllium_rc2_nb_active_scalability_multinet_controller_threads_viz",
-      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"Controller threads\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
+      "title": "beryllium_rc2_nb_active_scalability_multinet_descr_viz",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_descr_viz\",\"type\":\"markdown\",\"params\":{\"markdown\":\"## Beryllium RC2, Flow Scalability Multinet\\n- controller: ODL Beryllium RC2\\n- generator: Multinet\\n- topology size: (number of topology switches per worker node) [1, 2, 4, 35, 70, 330]\\n- number of worker nodes: 15\\n- total topology size: [15, 30, 60, 525, 1050, 4950]\\n- group size: [1]\\n- group delay: [3000] msec\\n- topology type: [linear]\\n- hosts per switch: [1]\\n- total flows to be added: [1000, 10000, 100000, 1000000]\\n- flow creation delay: [0] msec\\n- flow worker threads: [5]\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"add_flows_transmission_time\",\"customLabel\":\"NorthBound add controller time (sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_rate_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_rate_viz",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_rate_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"flows_controller_installation_rate\",\"customLabel\":\"end-to-end installation rate (flows/sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_time_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_time_viz",
+      "visState": "{\"title\":\"beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"add_flows_time\",\"customLabel\":\"end-to-end installation time (sec)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"multinet_size\",\"size\":25,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Topology size\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"total_flows\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Total added flows\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "beryllium_rc2_nb_active_scalability_multinet_rawdata_viz",
