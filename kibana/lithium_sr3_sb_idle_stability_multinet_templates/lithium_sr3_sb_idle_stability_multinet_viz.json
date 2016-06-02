@@ -94,7 +94,7 @@
     "_type": "visualization",
     "_source": {
       "title": "lithium_sr3_sb_idle_stability_multinet_descr_viz",
-      "visState": "{\"title\":\"New Visualization\",\"type\":\"markdown\",\"params\":{\"markdown\":\"## Beryllium RC2, Active Idle switch stability with Multinet\\n- topology size per worker node: 200\\n- number of worker nodes: 16\\n- total topology size: 3200\\n- group size: 1\\n- group delay: 2000ms\\n- topology type: Linear\\n- hosts per switch: 1\\n- period between samples: 10s\\n- number of samples: 4320\\n- total running time: 12hours\\n- persistence: enabled\"},\"aggs\":[],\"listeners\":{}}",
+      "visState": "{\"title\":\"New Visualization\",\"type\":\"markdown\",\"params\":{\"markdown\":\"## Lithium SR3, Active Idle switch stability with Multinet\\n- topology size per worker node: 200\\n- number of worker nodes: 16\\n- total topology size: 3200\\n- group size: 1\\n- group delay: 2000ms\\n- topology type: Linear\\n- hosts per switch: 1\\n- period between samples: 10s\\n- number of samples: 4320\\n- total running time: 12hours\\n- persistence: enabled\"},\"aggs\":[],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,

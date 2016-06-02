@@ -1,80 +1,5 @@
 [
   {
-    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
-      "visState": "{\n  \"title\": \"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz\",\n  \"type\": \"line\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"showCircles\": true,\n    \"smoothLines\": false,\n    \"interpolate\": \"linear\",\n    \"scale\": \"linear\",\n    \"drawLinesBetweenPoints\": true,\n    \"radiusRatio\": 9,\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"controller_vm_size\",\n        \"customLabel\": \"Controller virtual memory size (Bytes)\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"internal_repeat_id\",\n        \"interval\": 60,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Sample groups\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"filter\": []\n}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
-      "visState": "{\n  \"title\": \"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz\",\n  \"type\": \"line\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"showCircles\": true,\n    \"smoothLines\": false,\n    \"interpolate\": \"linear\",\n    \"scale\": \"linear\",\n    \"drawLinesBetweenPoints\": true,\n    \"radiusRatio\": 9,\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"controller_num_threads\",\n        \"customLabel\": \"Controller threads\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"internal_repeat_id\",\n        \"interval\": 60,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Sample groups\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"filter\": []\n}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
-      "visState": "{\n  \"title\": \"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz\",\n  \"type\": \"line\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"showCircles\": true,\n    \"smoothLines\": false,\n    \"interpolate\": \"linear\",\n    \"scale\": \"linear\",\n    \"drawLinesBetweenPoints\": true,\n    \"radiusRatio\": 9,\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"one_minute_load\",\n        \"customLabel\": \"CPU one minute load\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"internal_repeat_id\",\n        \"interval\": 50,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Repeat intervals\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"five_minute_load\",\n        \"customLabel\": \"CPU five minutes load\"\n      }\n    },\n    {\n      \"id\": \"5\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"fifteen_minute_load\",\n        \"customLabel\": \"CPU fifteen minute load\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"filter\": []\n}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
-      "visState": "{\n  \"title\": \"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz\",\n  \"type\": \"line\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"showCircles\": true,\n    \"smoothLines\": false,\n    \"interpolate\": \"linear\",\n    \"scale\": \"linear\",\n    \"drawLinesBetweenPoints\": true,\n    \"radiusRatio\": 9,\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"used_memory_bytes\",\n        \"customLabel\": \"Controller node used memory (KB)\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"internal_repeat_id\",\n        \"interval\": 60,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Sample groups\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"filter\": []\n}"
-      }
-    }
-  },
-  {
-    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
-    "_type": "visualization",
-    "_source": {
-      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
-      "visState": "{\n  \"title\": \"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz\",\n  \"type\": \"line\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"showCircles\": true,\n    \"smoothLines\": false,\n    \"interpolate\": \"linear\",\n    \"scale\": \"linear\",\n    \"drawLinesBetweenPoints\": true,\n    \"radiusRatio\": 9,\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"throughput_responses_sec\",\n        \"customLabel\": \"Throughput (responses/sec)\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"internal_repeat_id\",\n        \"interval\": 50,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Sample groups\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"filter\": []\n}"
-      }
-    }
-  },
-  {
     "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_cpu_user_time_viz",
     "_type": "visualization",
     "_source": {
@@ -102,6 +27,81 @@
         "searchSourceJSON": "{\n  \"query\": {\n    \"query_string\": {\n      \"analyze_wildcard\": true,\n      \"query\": \"*\"\n    }\n  },\n  \"filter\": []\n}"
       },
       "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz"
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"throughput_responses_sec\",\"customLabel\":\"throughput [responses/sec]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"one_minute_load\",\"customLabel\":\"CPU 1min load\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"repeat intervals [N]\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"five_minute_load\",\"customLabel\":\"CPU 5min load\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"fifteen_minute_load\",\"customLabel\":\"CPU 15min load\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"controller virtual memory size [bytes]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"system total used memory [kbytes]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
+      "visState": "{\"title\":\"beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"controller threads [N]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "beryllium_rc2_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
     }
   }
 ]
