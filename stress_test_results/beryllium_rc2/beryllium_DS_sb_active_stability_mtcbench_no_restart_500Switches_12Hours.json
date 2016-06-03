@@ -113,7 +113,7 @@
         "x_axis_label":"Repeat",
         "y_axis_label":"Controller threads",
         "plot_type":"errorbar_connected",
-        "plot_title":"Controller threads in time (Beryllium RC2)",
+        "plot_title":"controller number of threads in time (Beryllium RC2)",
         "plot_subtitle_keys":["controller_java_xopts", "cbench_ms_per_test"],
         "plot_filename":"num_threads",
         "x_min":null, "x_max":null, "y_min":null, "y_max":null,
