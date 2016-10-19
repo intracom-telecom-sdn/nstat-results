@@ -1,0 +1,91 @@
+[
+  {
+    "_id": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_descr_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_descr_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_idle_scalability_mtcbench_descr_viz\",\"type\":\"markdown\",\"params\":{\"markdown\":\"## Lithium SR3 \\\"RPC\\\" mode, Idle Switch Scalability with MT-Cbench\\n- controller: ODL Lithium SR3, drop-test \\\"RPC\\\" mode\\n- generator: MT-Cbench, \\\"Latency\\\" mode\\n- generator switches per thread: 50\\n- generator threads: [1,2,4,8,16,20,30,40,50,60,70,80,90,100]\\n- total topology size: [50, 100, 200, 300,\\n400, 800, 1000, 1500, 2000, 2500, 3000, 4000, 4500, 5000]\\n- generator inter-thread creation delay: [500, 1000, 2000, 400, 800, 16000]\\n- traffic generation interval: 100s\\n- persistence: enabled\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_open_fds_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_open_fds_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_open_fds_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":false,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_fds\",\"customLabel\":\"controller open file descriptors\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"number of network switches [N]\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"cbench_thread_creation_delay_ms\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Thread creation delay (msec)\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_vm_size_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_vm_size_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":false,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"controller virtual memory size [bytes]\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"number of network switches [N]\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"cbench_thread_creation_delay_ms\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Thread creation delay (msec)\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_used_memory_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_used_memory_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_idle_scalability_mtcbench_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":false,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"system total used memory [kbytes]\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"number of network switches [N]\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"cbench_thread_creation_delay_ms\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Thread creation delay (msec)\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_threads_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_threads_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_idle_scalability_mtcbench_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":false,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"controller threads [N]\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"number of network switches [N]\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"cbench_thread_creation_delay_ms\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Thread creation delay (msec)\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_bootup_time_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_bootup_time_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_idle_scalability_mtcbench_bootup_time_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":false,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"bootup_time_secs\",\"customLabel\":\"bootup time [s]\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"cbench_switches\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"number of network switches [N]\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"cbench_thread_creation_delay_ms\",\"size\":24,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Thread creation delay (msec)\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"cbench_switches_per_thread\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"MT-Cbench switches per thread\",\"row\":true}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_idle_scalability_mtcbench_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

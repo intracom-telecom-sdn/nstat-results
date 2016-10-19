@@ -1,0 +1,107 @@
+[
+  {
+    "_id": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_cpu_user_time_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_cpu_user_time_viz",
+      "visState": "{\n  \"title\": \"lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_cpu_user_time_viz\",\n  \"type\": \"line\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"showCircles\": true,\n    \"smoothLines\": false,\n    \"interpolate\": \"linear\",\n    \"scale\": \"linear\",\n    \"drawLinesBetweenPoints\": true,\n    \"radiusRatio\": 9,\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"controller_cpu_user_time\",\n        \"customLabel\": \"Controller CPU time Average\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"internal_repeat_id\",\n        \"interval\": 60,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Repeat intervals\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_descr_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_descr_viz",
+      "visState": "{\n  \"aggs\": [],\n  \"listeners\": {},\n  \"params\": {\n    \"markdown\": \"## Lithium SR3 \\\"RPC\\\" mode, Active Switch Scalability with MT-Cbench\\n- controller: ODL Lithium SR3, drop-test \\\"RPC\\\" mode\\n- generator: MT-Cbench, \\\"Latency\\\" mode\\n- generator switches per thread: 50\\n- generator threads: 10\\n- total topology size: 500\\n- generator inter-thread creation delay: 8s\\n-number of samples: 4320\\n-period between samples: 10s\\n- persistence: enabled\"\n  },\n  \"title\": \"lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12hours_descr_viz\",\n  \"type\": \"markdown\"\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"query\": {\n    \"query_string\": {\n      \"analyze_wildcard\": true,\n      \"query\": \"*\"\n    }\n  },\n  \"filter\": []\n}"
+      },
+      "savedSearchId": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz"
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_throughput_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"throughput_responses_sec\",\"customLabel\":\"throughput [responses/sec]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_load_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"one_minute_load\",\"customLabel\":\"CPU 1min load\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":50,\"extended_bounds\":{},\"customLabel\":\"repeat intervals [N]\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"five_minute_load\",\"customLabel\":\"CPU 5min load\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"fifteen_minute_load\",\"customLabel\":\"CPU 15min load\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_vm_size_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_vm_size\",\"customLabel\":\"controller virtual memory size [bytes]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_system_used_memory_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"used_memory_bytes\",\"customLabel\":\"system total used memory [kbytes]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
+    "_type": "visualization",
+    "_source": {
+      "title": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz",
+      "visState": "{\"title\":\"lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_controller_threads_viz\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"controller_num_threads\",\"customLabel\":\"controller threads [N]\"}},{\"id\":\"3\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"internal_repeat_id\",\"interval\":60,\"extended_bounds\":{},\"customLabel\":\"Sample groups\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "lithium_sr3_rpc_sb_active_stability_mtcbench_no_restart_500switches_12_hours_rawdata_viz",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

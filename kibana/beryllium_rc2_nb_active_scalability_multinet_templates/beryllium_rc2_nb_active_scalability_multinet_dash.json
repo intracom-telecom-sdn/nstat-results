@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "beryllium_rc2_nb_active_scalability_multinet_dash",
+    "_type": "dashboard",
+    "_source": {
+      "title": "beryllium_rc2_nb_active_scalability_multinet_dash",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"beryllium_rc2_nb_active_scalability_multinet_add_controller_rate_viz\",\"panelIndex\":1,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"beryllium_rc2_nb_active_scalability_multinet_add_controller_time_viz\",\"panelIndex\":2,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_rate_viz\",\"panelIndex\":3,\"row\":9,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"beryllium_rc2_nb_active_scalability_multinet_flows_controller_installation_time_viz\",\"panelIndex\":4,\"row\":9,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"beryllium_rc2_nb_active_scalability_multinet_used_memory_viz\",\"panelIndex\":5,\"row\":13,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"beryllium_rc2_nb_active_scalability_multinet_controller_vm_size_viz\",\"panelIndex\":6,\"row\":13,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"beryllium_rc2_nb_active_scalability_multinet_controller_threads_viz\",\"panelIndex\":7,\"row\":17,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"global_sample_id\",\"timestamp\",\"date\",\"total_flows\",\"failed_flow_operations\",\"add_flows_transmission_time\",\"add_controller_rate\",\"add_flows_time\",\"flows_controller_installation_rate\",\"flow_delete_flag\",\"flow_operation_delay_ms\",\"flow_workers\",\"nb_generator_cpu_shares\",\"controller_name\",\"controller_node_ip\",\"controller_port\",\"controller_cwd\",\"controller_java_xopts\",\"controller_cpu_shares\",\"controller_vm_size\",\"controller_cpu_system_time\",\"controller_cpu_user_time\",\"controller_num_fds\",\"controller_num_threads\",\"controller_restart\",\"controller_statistics_period_ms\",\"multinet_topology_type\",\"multinet_size\",\"multinet_group_size\",\"multinet_group_delay_ms\",\"multinet_hosts_per_switch\",\"multinet_worker_topo_size\",\"multinet_workers\",\"total_memory_bytes\",\"used_memory_bytes\",\"free_memory_bytes\",\"one_minute_load\",\"five_minute_load\",\"fifteen_minute_load\"],\"id\":\"beryllium_rc2_nb_active_scalability_multinet_rawdata_viz\",\"panelIndex\":10,\"row\":21,\"size_x\":12,\"size_y\":7,\"sort\":[\"global_sample_id\",\"asc\"],\"type\":\"search\"},{\"id\":\"beryllium_rc2_nb_active_scalability_multinet_descr_viz\",\"type\":\"visualization\",\"panelIndex\":11,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  }
+]
